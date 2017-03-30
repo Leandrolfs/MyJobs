@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "MyJobs";
+}
+
+<div class="content-vagas formfull">
+    <div class="cont-cid w-full">
+        <h2>Vagas por Cidade</h2>
+        <ul class="wrap-content w-full">
+            <li><a href="~/Jobs/Vagas_Brasilia/">Brasilia</a></li>
+            <li><a href="#">Buritis</a></li>
+            <li><a href="#">Uruana</a></li>
+            <li><a href="#">Formosa</a></li>
+            <li><a href="#">Formoso</a></li>
+            <li><a href="#">Unai</a></li>
+            <li><a href="#">Goiania</a></li>
+            <li><a href="#">São paulo</a></li>
+            <li><a href="#">Rio de Janeiro</a></li>
+            <li><a href="#">Cuiaba</a></li>
+            <li><a href="#">Brasilia</a></li>
+            <li><a href="#">Buritis</a></li>
+            <li><a href="#">Uruana</a></li>
+            <li><a href="#">Formosa</a></li>
+            <li><a href="#">Formoso</a></li>
+            <li><a href="#">Unai</a></li>
+            <li><a href="#">Goiania</a></li>
+            <li><a href="#">São paulo</a></li>
+            <li><a href="#">Rio de Janeiro</a></li>
+            <li><a href="#">Cuiaba</a></li>
+        </ul>
+    </div>
+
+    <div class="cont-job w-full">
+        <h2>Vagas por Especialidade</h2>
+        <ul class="wrap-content w-full">
+            <li><a href="~/Jobs/Analista_Sistemas">Analista de Sistemas</a></li>
+            <li><a href="#">Arquiteto de software</a></li>
+            <li><a href="#">Padeiro</a></li>
+            <li><a href="#">Empacotador</a></li>
+            <li><a href="#">Desenvolvedor Web</a></li>
+            <li><a href="#">Analista de banco de dados</a></li>
+            <li><a href="#">Analista de suporte</a></li>
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Açouqueiro</a></li>
+            <li><a href="#">Analista de Informação</a></li>
+            <li><a href="#">Analista de Sistemas</a></li>
+            <li><a href="#">Arquiteto de software</a></li>
+            <li><a href="#">Padeiro</a></li>
+            <li><a href="#">Empacotador</a></li>
+            <li><a href="#">Desenvolvedor Web</a></li>
+            <li><a href="#">Analista de banco de dados</a></li>
+            <li><a href="#">Analista de suporte</a></li>
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Açouqueiro</a></li>
+            <li><a href="#">Analista de Informação</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-phone formfull">
+    <h3>Receba vagas diretamente no seu celular. Cadastre!</h3>
+    <p id="message-erro-cadastro"></p>
+    <div class="content">
+        <form action="#" method="post" name="form-contato">
+            <input type="text" name="contato" id="num-phone" maxlength="15" placeholder="Numero..." />
+            <select id="especial" name="vaga-para">
+                <option value="">Vagas para</option>
+                <option value="Analista de Sistemas">Analista de Sistemas</option>
+                <option value="Padeiro">Padeiro</option>
+                <option value="Analista de banco de dados">Analista de banco de dados</option>
+                <option value="Engenheiro de software">Engenheiro de software</option>
+                <option value="Analista de segurança da informação">Analista de segurança da informação</option>
+            </select>
+            <button type="submit" id="cadastrar">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+  @*  <div class="advers">
+
+    </div>
+*@

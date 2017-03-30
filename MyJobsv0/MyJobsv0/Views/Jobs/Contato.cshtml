@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Contato";
+}
+
+<div class="form-contato formfull">
+    <h2>Mande nos uma mensagem!</h2>
+    <div class="content-contato">
+        <form action="#" method="post" name="formulario-contato">
+            <label>Nome</label> <span>*</span><br />
+            <input type="text" name="nome" id="nome-contato" placeholder="Nome.." required />
+
+            <label>Email</label> <span> *</span><br />
+            <input type="email" name="email" id="email-contato" placeholder="Email.." required />
+
+            <label>Assunto</label> <span> *</span><br />
+            <select id="assunto" name="assunto" required>
+                <option value=""></option>
+                <option value="Anunciar vaga">Anunciar vaga</option>
+                <option value="Reclamacao">Reclamação</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label>Mensagem</label> <span> *</span><br />
+            <textarea rows="3" name="mensagem" id="msg-contato" placeholder="Mensagem..." required></textarea>
+
+            <button type="submit" id="btcontato">Enviar mensagem</button>
+        </form>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $_id("btjobs").onclick = function () {
+            return verificanullsearch();
+        }
+    </script>
+}

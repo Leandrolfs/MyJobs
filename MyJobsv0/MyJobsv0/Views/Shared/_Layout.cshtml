@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Encontre vagas de emprego mais fácil na web"/>
+    <meta name="keywords" content="Vagas de emprego, Trabalho, Vagas novas, Vaga de trabalho"/>
+    <meta name="robots" content="Index, follow"/>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/myjobs.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="~/img/icon.png"/>
+</head>
+<body>
+    <header class="cabecalho formfull"><!--Topo da pagina-->
+        <a href="~/"><h1 class="logo c-white">Vagas de emprego trabalho</h1></a><!--Logo-->
+        <button class="btn-menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button><!--Botão responsivo-->
+        <nav class="menu w-full"><!--Menu de opções-->
+            <a class="btn-close c-white"><i class="fa fa-times"></i></a><!--Fecha botão responsivo-->
+            <ul class="formfull">
+                <li><a href="~/">Home</a></li><!--Links-->
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="~/Jobs/Contato">Contato</a></li>
+                <li><a href="#">Para empresas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container formfull"><!--Campo de pesquisa por vagas-->
+    <h2>Busque por vagas especificas na sua cidade</h2>
+            <form action="~/Jobs/Search" method="get" name="form_busca">
+                <input type="text" name="vaga_para" placeholder="Especialidade...." id="jobq" pattern="[a-z A-Z\s]+$" />
+                <input type="text" name="em" placeholder="Cidade...." id="jobo" pattern="[a-z A-Z\s]+$" />
+                <button type="submit" id="btjobs">Pesquisar</button>
+            </form>
+        <p id="message-erro"></p>
+    </main>
+    <footer class="rodape formfull">
+        <div class="icons-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="developer">
+            <a href="https://github.com/Leandrolfs">By Leandro Silva</a>
+        </p>
+    </footer>
+
+    @RenderBody()
+
+    <!-- ### jQuery ### -->
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script src="~/Scripts/myjobs.js"></script>
+
+    @Scripts.Render("~/Scripts/valida.js")
+    @RenderSection("scripts", required: false)
+
+    
+    <div class="reset"></div>
+</body>
+</html>

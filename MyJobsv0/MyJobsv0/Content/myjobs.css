@@ -1,0 +1,160 @@
+﻿/* =========== RESET =============== */
+*{padding:0; margin:0; font-size:100%; border:none; outline:none; font-weight:300; box-sizing:border-box; font-family: 'Lato', sans-serif;}
+body{background-color:#FFF/*f5f5f5*/;}
+a{text-decoration:none;}
+ul{list-style:none;}
+img{width:100%;}
+
+.formfull{width: 100%; float: left; text-align: center;}
+.c-white{color: #FFF;}
+button{background-color: #0099FF; color: #FFF; border-radius: 7px;}
+.w-full{width: 100%;}
+
+/* ========== Header ========== */
+.cabecalho{padding:1% 4%; border-bottom:3px solid #f5f5f5;}
+.logo{width:56px; height:56px; float:left; background:url(../img/logo-mobile.png) center/56px no-repeat; font-size:0;}
+.btn-menu{width:56px; height:56px; float:right; text-align:center; border-radius:56px; cursor:pointer; /*background:linear-gradient(to right, #ce2e3c, #da6709)*/
+         background-color:#0099FF;}
+.menu{height:100%; position:fixed; background-color: rgba(0, 0, 0, 0.9); top:0; left:0; display:none;}
+.btn-close{font-size:1.5em; float:right; cursor:pointer; margin: 2% 3% 0 0;}
+.menu li{padding: 1.5%;}
+.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover{border: 1px solid #0099FF;}
+
+
+/* ======== Rodape ============*/
+.rodape{padding:0% 4%; background:linear-gradient(#2c8b80, #0099FF); bottom:0; position: fixed; border-top: 4px solid #ccc; }
+.icons-social a{font-size:1.5em; color: rgba(255, 255, 255, 0.7); margin-right:3%;}
+.icons-social a:last-child{margin-right:0;}
+.icons-social a:hover{color: rgb(255, 255, 255);}
+.developer{margin-top:1%; margin-bottom: 2%;}
+.developer a{color: rgba(255, 255, 255, 0.7);}
+
+
+/* ====== Container ====== - Campo de busca*/
+.container{padding: 3% 4%;}
+.container form{margin-top:2%;}
+.container input{width:100%; margin-top: 5%; border-bottom: 1px solid #7b19b6; color: #7b19b6; }
+.container button{width:50%; margin-top:5%; padding: 5%; cursor:pointer; font-weight: 700;}
+.container h2{font-weight:700;}
+
+
+/* ======== Escolha de vagas por cidade / especialidade ======= */
+.content-vagas{padding: 3% 4%; overflow:hidden;}
+.content-vagas .cont-cid, .content-vagas .cont-job{margin-top:2%; overflow:hidden;}
+.cont-cid .wrap-content, .cont-job .wrap-content{text-align:left; margin-top:3%; overflow-x:auto; height:150px;}
+.wrap-content li a{color: #130400; font-weight:500;}
+.wrap-content li a:hover{color:#0099FF;}
+.cont-cid h2, .cont-job h2{color: #130400; font-weight: 700; margin-top: 4%;  border-bottom: 2px solid #ccc;}
+
+
+/* ========== Vaga por phone ======== */
+.content-phone{padding:3% 4%;}
+.content form{margin-top:2%;}
+.content input{width:100%; border: 1px solid #ccc; padding: 5%; border-radius: 7px; margin-top: 2%;}
+.content-phone h3{margin-top:3%; font-weight:500;}
+.content select{width:100%; border: 1px solid #ccc; padding: 5%; border-radius: 7px; margin-top: 2%;}
+.content button{width: 50%; margin-top: 3%; padding: 5%; cursor: pointer; font-weight: 700;}
+
+
+/* ======== Reset page ======== */
+.reset{width:100%; float:left; padding: 12% 4%;}
+/* =========================================== */
+
+/* ======= Pag search ======= */
+.res-vagas{padding: 3% 15%;}
+.res-content{text-align: left;}
+.res-content h2{font-size: 1.2em; font-weight: 500; margin-top: 3%;}
+.res-content p{margin-top: 3%;}
+
+/* ======== Form contato ===== */
+.form-contato{padding: 3% 4%;}
+.form-contato h2{font-size: 1.5em; font-weight: 400; }
+.content-contato{text-align: left; margin-top: 3%;}
+.content-contato label{font-weight:500;}
+.content-contato input, select, textarea{width:100%; border: 1px solid #ccc; padding: 5%; border-radius: 7px; margin-bottom: 4%;}
+.content-contato textarea{max-height:80px; min-width: 100%; max-width:100%;}
+.content-contato span{color: #0099FF;}
+.content-contato button{width:75%; padding: 3%; border: 2px solid #ccc; text-align:left; font-weight: 500; cursor: pointer; font-size: 1.5em;}
+
+
+       /* ===== SCREEN FORMAT ===== */
+/* == SMALL DEVICES - SMARTPHONE == */
+@media screen and (min-width: 480px){
+    /*.logo{width: 214px; background: url(../img/logo.png) center/214px no-repeat;}*/
+    .container input{width:48%; margin-right: 2%; border: 1px solid #ccc; padding: 3%; border-radius: 7px; float:left;}
+    .container input:last-child{margin-right:0;}
+    .container button{width:50%; border: 2px solid #ccc; padding: 3%; font-size: 1.2em;}
+    .container h2{font-size: 1.3em;}
+    .cont-cid h2{margin-bottom: 8%;}
+    .cont-job h2{margin-bottom: 8%;}
+    .content-vagas .cont-cid{width:48%; margin-right: 2%; float:left;}
+    .content-vagas .cont-job{width:48%; float:left;}
+    .content-phone h3{font-size: 1.2em;}
+    .content input{width: 48%; padding: 3%; float: left; margin-right: 2%;}
+    .content select{width: 48%; padding: 3%; float: left; margin-right: 0;}
+    .content button{width: 50%; padding: 3%; font-size: 1.2em; border: 2px solid #ccc;}
+    .reset{padding: 7% 4%;}
+    .form-contato{padding: 3% 15%;}
+    .content-contato input, select, textarea{padding: 2%;}
+    .content-contato button{width: 65%;}
+}
+
+@media screen and (min-width: 640px){
+    .container input, .content input, .content select{padding: 1.5%;}
+    .container button, .content button{width: 40%; padding: 2%;}
+    .reset{padding: 5% 4%;}
+    .content-contato input, select , textarea{padding: 2%;}
+    .form-contato{padding: 3% 20%;}
+    .content-contato button{width: 58%;}
+}
+
+/* == SMALL DEVICES - TABLETS == */
+@media screen and (min-width: 768px){
+    .container input{padding: 1.5%; width: 40%; float: left;}
+    .container button{width: 16%; padding: 1.3%;}
+    .cont-cid h2, .cont-job h2{font-size: 1.2em;}
+    .content-phone h3{font-size: 1.2em; font-weight: 700;}
+    .content input, .content select{width: 40%; padding: 1.5%; float: left;}
+    .content button{width: 16%; padding: 1.3%; margin-top:2%;}
+    .reset{padding: 5% 4%;}
+    .content-contato input, select, textarea{padding: 2%;}
+    .form-contato{padding: 3% 22%;}
+    .content-contato button{width: 52%;}
+}
+
+/* == MEDIUM DEVICES - TABLETS AND DESKTOP == */
+@media screen and (min-width: 960px){
+   .container, .content-vagas, .content-phone{padding: 3% 20%;}
+   .container input, .content input, .content select{width:38%; float:left;}
+   .container button, .content button{width:20%;}
+   .reset{padding: 4% 4%;}
+   .res-vagas{padding: 3% 20%;}
+   .content-contato input, select, textarea{padding: 2%;}
+   .form-contato{padding: 3% 25%;}
+   .content-contato button{width: 48%;}
+}
+
+/* == LARGE DEVICES - WIDE SCREEN == */
+@media screen and (min-width: 1280px){
+    .btn-menu{display: none;}
+    .btn-close{display: none;}
+    .menu{width: auto; height: 56px; line-height: 56px; float: right; background-color: #FFF/*f5f5f5*/; display: block !important; position: static;}
+    .menu li{padding: 0; float: left;}
+    .menu li a{color: #130400; font-size: 1em; padding: 15px;}
+    .menu li a:hover{border: none; color: #0099FF;}
+    .container, .content-vagas, .content-phone{padding: 1% 25%;}
+    .container input, .content input, .content select{width: 38%; float: left;}
+    .container button, .content button{width: 20%;}
+    .reset{padding: 4% 4%;}
+    .cont-cid .wrap-content, .cont-job .wrap-content{height: 220px;}
+    .container h2{display:none;}
+   .form-contato{padding: 3% 30%;}
+   .content-contato button{width: 40%; padding: 2%;}
+}
+
+/* == WXGA Ultrabook ===*/
+@media screen and (min-wdth: 1366px){
+    .content-contato input, select, textarea{padding: 2%;}
+   .form-contato{padding: 3% 30%;}
+}
